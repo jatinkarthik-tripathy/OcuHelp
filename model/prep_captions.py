@@ -22,7 +22,7 @@ def load_descriptions(doc):
 
 def clean_descriptions(descriptions):
 	table = str.maketrans('', '', string.punctuation)
-	for key, desc_list in descriptions.items():
+	for _, desc_list in descriptions.items():
 		for i in range(len(desc_list)):
 			desc = desc_list[i]
 			# tokenize
